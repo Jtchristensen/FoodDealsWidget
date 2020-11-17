@@ -13,7 +13,38 @@
 		CEB117E525648FE8004F30FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB117E325648FE8004F30FF /* Main.storyboard */; };
 		CEB117E725648FEB004F30FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB117E625648FEB004F30FF /* Assets.xcassets */; };
 		CEB117EA25648FEB004F30FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB117E825648FEB004F30FF /* LaunchScreen.storyboard */; };
+		CEB117F9256490CD004F30FF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB117F8256490CD004F30FF /* WidgetKit.framework */; };
+		CEB117FB256490CD004F30FF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB117FA256490CD004F30FF /* SwiftUI.framework */; };
+		CEB117FE256490CD004F30FF /* FoodDealsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB117FD256490CD004F30FF /* FoodDealsWidget.swift */; };
+		CEB11801256490D0004F30FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB11800256490D0004F30FF /* Assets.xcassets */; };
+		CEB11803256490D0004F30FF /* FoodDealsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CEB117FF256490CE004F30FF /* FoodDealsWidget.intentdefinition */; };
+		CEB11804256490D0004F30FF /* FoodDealsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CEB117FF256490CE004F30FF /* FoodDealsWidget.intentdefinition */; };
+		CEB11807256490D0004F30FF /* FoodDealsWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEB117F6256490CD004F30FF /* FoodDealsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEB11805256490D0004F30FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB117D225648FE8004F30FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEB117F5256490CD004F30FF;
+			remoteInfo = FoodDealsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEB1180B256490D0004F30FF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEB11807256490D0004F30FF /* FoodDealsWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CEB117DA25648FE8004F30FF /* FoodDeals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +55,13 @@
 		CEB117E625648FEB004F30FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB117E925648FEB004F30FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB117EB25648FEB004F30FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB117F6256490CD004F30FF /* FoodDealsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FoodDealsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB117F8256490CD004F30FF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CEB117FA256490CD004F30FF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CEB117FD256490CD004F30FF /* FoodDealsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDealsWidget.swift; sourceTree = "<group>"; };
+		CEB117FF256490CE004F30FF /* FoodDealsWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = FoodDealsWidget.intentdefinition; sourceTree = "<group>"; };
+		CEB11800256490D0004F30FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEB11802256490D0004F30FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +72,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEB117F3256490CD004F30FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB117FB256490CD004F30FF /* SwiftUI.framework in Frameworks */,
+				CEB117F9256490CD004F30FF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				CEB117DC25648FE8004F30FF /* FoodDeals */,
+				CEB117FC256490CD004F30FF /* FoodDealsWidget */,
+				CEB117F7256490CD004F30FF /* Frameworks */,
 				CEB117DB25648FE8004F30FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB117DA25648FE8004F30FF /* FoodDeals.app */,
+				CEB117F6256490CD004F30FF /* FoodDealsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +117,26 @@
 			path = FoodDeals;
 			sourceTree = "<group>";
 		};
+		CEB117F7256490CD004F30FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEB117F8256490CD004F30FF /* WidgetKit.framework */,
+				CEB117FA256490CD004F30FF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEB117FC256490CD004F30FF /* FoodDealsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CEB117FD256490CD004F30FF /* FoodDealsWidget.swift */,
+				CEB117FF256490CE004F30FF /* FoodDealsWidget.intentdefinition */,
+				CEB11800256490D0004F30FF /* Assets.xcassets */,
+				CEB11802256490D0004F30FF /* Info.plist */,
+			);
+			path = FoodDealsWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +147,34 @@
 				CEB117D625648FE8004F30FF /* Sources */,
 				CEB117D725648FE8004F30FF /* Frameworks */,
 				CEB117D825648FE8004F30FF /* Resources */,
+				CEB1180B256490D0004F30FF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEB11806256490D0004F30FF /* PBXTargetDependency */,
 			);
 			name = FoodDeals;
 			productName = FoodDeals;
 			productReference = CEB117DA25648FE8004F30FF /* FoodDeals.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CEB117F5256490CD004F30FF /* FoodDealsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB11808256490D0004F30FF /* Build configuration list for PBXNativeTarget "FoodDealsWidgetExtension" */;
+			buildPhases = (
+				CEB117F2256490CD004F30FF /* Sources */,
+				CEB117F3256490CD004F30FF /* Frameworks */,
+				CEB117F4256490CD004F30FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodDealsWidgetExtension;
+			productName = FoodDealsWidgetExtension;
+			productReference = CEB117F6256490CD004F30FF /* FoodDealsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +186,9 @@
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					CEB117D925648FE8004F30FF = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					CEB117F5256490CD004F30FF = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -115,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				CEB117D925648FE8004F30FF /* FoodDeals */,
+				CEB117F5256490CD004F30FF /* FoodDealsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +223,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEB117F4256490CD004F30FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB11801256490D0004F30FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,13 +238,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB11804256490D0004F30FF /* FoodDealsWidget.intentdefinition in Sources */,
 				CEB117E225648FE8004F30FF /* ViewController.swift in Sources */,
 				CEB117DE25648FE8004F30FF /* AppDelegate.swift in Sources */,
 				CEB117E025648FE8004F30FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEB117F2256490CD004F30FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB11803256490D0004F30FF /* FoodDealsWidget.intentdefinition in Sources */,
+				CEB117FE256490CD004F30FF /* FoodDealsWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEB11806256490D0004F30FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEB117F5256490CD004F30FF /* FoodDealsWidgetExtension */;
+			targetProxy = CEB11805256490D0004F30FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEB117E325648FE8004F30FF /* Main.storyboard */ = {
@@ -284,6 +403,7 @@
 		CEB117EF25648FEB004F30FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +423,7 @@
 		CEB117F025648FEB004F30FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +435,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = JTC.FoodDeals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEB11809256490D0004F30FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 657Q4GLDXN;
+				INFOPLIST_FILE = FoodDealsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JTC.FoodDeals.FoodDealsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEB1180A256490D0004F30FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 657Q4GLDXN;
+				INFOPLIST_FILE = FoodDealsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JTC.FoodDeals.FoodDealsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +499,15 @@
 			buildConfigurations = (
 				CEB117EF25648FEB004F30FF /* Debug */,
 				CEB117F025648FEB004F30FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB11808256490D0004F30FF /* Build configuration list for PBXNativeTarget "FoodDealsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB11809256490D0004F30FF /* Debug */,
+				CEB1180A256490D0004F30FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
